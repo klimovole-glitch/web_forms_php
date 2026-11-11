@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация студента</title>
+</head>
+<body>
+    <h2>Форма регистрации</h2>
+    <!-- action="process.php" указывает, куда уйдут данные -->
+    <form action="process.php" method="POST">
+        <p>
+            <label>Имя:</label><br>
+            <input type="text" name="first_name" required>
+        </p>
+        <p>
+            <label>Фамилия:</label><br>
+            <input type="text" name="last_name" required>
+        </p>
+        <p>
+            <label>Возраст:</label><br>
+            <input type="number" name="age" required>
+        </p>
+        <p>
+            <label>Группа:</label><br>
+            <input type="text" name="group" required>
+        </p>
+        <p>
+            <label>Специальность:</label><br>
+            <select name="specialty">
+                <option value="Информационные системы">Информационные системы</option>
+                <option value="Программирование">Программирование</option>
+                <option value="Веб-дизайн">Веб-дизайн</option>
+            </select>
+        </p>
+        <button type="submit">Зарегистрировать</button>
+    </form>
+</body>
+</html>
